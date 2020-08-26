@@ -7,7 +7,7 @@ import os
 class UrlManager(object):
     @staticmethod
     def buildUrl(path):
-        config_domain = "http://127.0.0.1:5000"
+        config_domain = app.config['DOMAIN']
         return "%s%s" % (config_domain, path)
 
     @staticmethod

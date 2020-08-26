@@ -6,6 +6,6 @@ from common.libs.Helper import ops_render
 index_page = Blueprint("index_page", __name__)
 
 
-@index_page.route('/')
-def index():
-    return ops_render('member/login.html')
+@index_page.route('/index')
+def login():
+    return ops_render('index.html')
